@@ -1,8 +1,6 @@
-const test = require('./index');
-
-// function test() {
-//     return 12;
-// }
+function test() {
+    return 12;
+}
 
 describe('Function test', () => {
     beforeEach(() => {
