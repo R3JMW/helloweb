@@ -8,8 +8,8 @@ xdescribe('Test Login method', () => {
         // console.log('Prepare token');
         const loginService = new LoginService();
         token = await loginService.login({
-            username: 'chris.yang.cui@kingland.com',
-            password: 'K1ngland!'
+            username: 'username',
+            password: 'password'
         }).toPromise();
         // console.log(token);
     });
