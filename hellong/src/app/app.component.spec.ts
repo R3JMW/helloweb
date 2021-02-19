@@ -1,6 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { AppService } from './app.service';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -11,7 +12,15 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent
       ],
+      providers: [AppService]
     }).compileComponents();
+  });
+
+  it('should init sidebar menu', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    const service = TestBed.inject(AppService);
+    expect(service.getMenu()).not.toBeUndefined();
   });
 
   it('should create the app', () => {

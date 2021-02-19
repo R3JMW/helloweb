@@ -1,11 +1,11 @@
 // Karma configuration
-// Generated on Wed Feb 10 2021 18:10:55 GMT+0800 (China Standard Time)
+// Generated on Fri Feb 19 2021 15:28:42 GMT+0800 (China Standard Time)
 
 module.exports = function(config) {
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
-    basePath: '',
+    basePath: 'src',
 
 
     // frameworks to use
@@ -15,7 +15,6 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'src/**/*[sS]pec.js'
     ],
 
 
